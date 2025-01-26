@@ -177,7 +177,7 @@ function App() {
         </div>
       </section>
 
-      <h2>Used FlexBox for this below section for above links</h2>
+      <h2>Connect with me</h2>
       <section id="contact">
         <ul>
           <li><a href="https://wa.me/1234567890" className="color-whatsapp"><i className="fab fa-whatsapp"></i> WhatsApp</a></li>
@@ -213,6 +213,7 @@ function App() {
         </form>
       </section>
       <section id="hobbies">
+        <h1 class="title">Hobbies</h1>
   {/* <p class="section__text__p1">Browse My Recent</p> */}
   <div className="hobbies-grid">
           <div className="hobby-item">Photography</div>
@@ -222,7 +223,6 @@ function App() {
           <div className="hobby-item">Music</div>
           <div className="hobby-item">Reading</div>
         </div>
-  <h1 class="title">Hobbies</h1>
   
 </section>
 
