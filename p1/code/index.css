@@ -1,0 +1,189 @@
+
+/* Contact Section Styles */
+#contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  p{
+    text-align: center;
+  
+  
+  }
+  
+  h2{
+        font-size: 3rem;
+      text-align: center;
+  }
+
+  
+  #contact h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #contact p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  #contact ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 20px 0;
+    display: flex; /* Align list items horizontally */
+    flex-wrap: wrap; /* Wrap to next line on smaller screens */
+    gap: 20px; /* Space out the items */
+  }
+  
+  #contact ul li {
+    display: flex; /* Align items inside li horizontally */
+    align-items: center;
+    margin: 0; /* Remove margin for better alignment */
+  }
+  
+  #contact ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for color and glow effect */
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  
+  #contact form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px; /* Set font size to 14px */
+    font-family: Calibri, sans-serif; /* Set font to Calibri, fallback to sans-serif */
+  }
+  
+  #contact form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px; /* Set font size to 14px */
+    font-family: Calibri, sans-serif; /* Set font to Calibri, fallback to sans-serif */
+  }
+  
+  #contact form button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #contact form button:hover {
+    background-color: #444;
+  }
+  @media screen and (max-width: 1400px) {
+   
+    #contact
+     {
+      height: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+   
+}
+    
+@media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+   
+}
+
+.hobbies-container {
+  padding: 20px;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates responsive columns for hobbies */
+  gap: 20px; /* Adds space between the hobby items */
+  margin-top: 20px;
+}
+
+.hobby-item {
+  background-color: #f4f4f4; /* Light background for hobbies */
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for medium screens */
+@media (max-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust hobby grid for medium screens */
+    gap: 15px; /* Adjust spacing for smaller screens */
+  }
+}
+
+/* Media Query for small screens */
+@media (max-width: 480px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr; /* Stack hobby items in one column for small screens */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+}

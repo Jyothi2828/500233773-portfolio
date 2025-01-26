@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>Flex Box</h2>
+    <p>Contact methods (WhatsApp, Email, LinkedIn) are arranged in a row and adjust automatically when screen size changes.</p>
+     <p>Form elements are stacked one below the other with enough space in between, creating a simple and user-friendly layout that works on any device.</p>    
+     <section id="contact">
+        <ul>
+            <li>
+                <a href="https://wa.me/1234567890" class="color-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li>
+                <a href="mailto:jpjstest@gmail.com" class="color-email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/jyothiprasannakambam" target="_blank" rel="noopener noreferrer" class="color-linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+        </ul>
+        <h3>Fill the details below to get in touch:</h3>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="from_name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email_id" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Connect</button>
+        </form>
+    </section>
+    <div class="hobbies-container">
+        <h2>Grid Layout for Hobbies</h2>
+      
+        <div class="hobbies-grid">
+          <div class="hobby-item">Photography</div>
+          <div class="hobby-item">Coding</div>
+          <div class="hobby-item">Gaming</div>
+          <div class="hobby-item">Traveling</div>
+          <div class="hobby-item">Music</div>
+          <div class="hobby-item">Reading</div>
+        </div>
+      </div>
+      
+</body>
+</html>
