@@ -5,8 +5,7 @@ import ProfilePic from './assets/profile-pic.png';
 import Project1 from './assets/project-1.png';
 import Project2 from './assets/project-2.png';
 import Project3 from './assets/project-3.png';
-import Hobby1 from './assets/hobby1.png';
-import Hobby2 from './assets/hobby2.png';
+
 
 
 
@@ -215,6 +214,14 @@ function App() {
       </section>
       <section id="hobbies">
   {/* <p class="section__text__p1">Browse My Recent</p> */}
+  <div className="hobbies-grid">
+          <div className="hobby-item">Photography</div>
+          <div className="hobby-item">Coding</div>
+          <div className="hobby-item">Gaming</div>
+          <div className="hobby-item">Traveling</div>
+          <div className="hobby-item">Music</div>
+          <div className="hobby-item">Reading</div>
+        </div>
   <h1 class="title">Hobbies</h1>
   
 </section>

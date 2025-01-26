@@ -706,3 +706,39 @@ footer p {
       text-align: justify;
     }
 }
+
+.hobbies-container {
+  padding: 20px;
+  }
+  
+  .hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates responsive columns for hobbies */
+  gap: 20px; /* Adds space between the hobby items */
+  margin-top: 20px;
+  }
+  
+  .hobby-item {
+  background-color: #f4f4f4; /* Light background for hobbies */
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query for medium screens */
+  @media (max-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust hobby grid for medium screens */
+    gap: 15px; /* Adjust spacing for smaller screens */
+  }
+  }
+  
+  /* Media Query for small screens */
+  @media (max-width: 480px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr; /* Stack hobby items in one column for small screens */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+  }
+  
